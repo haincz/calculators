@@ -1,0 +1,88 @@
+.form-control {
+	width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
+}
+
+.calculatorcontainer,
+#calcvalate-result {
+	width: 1200px;
+	margin: 20px auto;
+	text-align: center;
+	max-width: 100%;
+}
+
+.calculatorcontainer p {
+	display: inline;
+}
+
+.currency {
+	margin: 20px auto;
+}
+
+.fromcurrency {
+	margin-left: 10px;
+}
+
+/*cookies*/
+
+#cookies-modal {
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    left: 0;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modalContent {
+	width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.modalContent > p {
+	text-align: center;
+	font-size: 16px;
+}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/*cookies end*/
+
+@media screen and (max-width: 480px) {
+	.form-control {
+		display: block;
+	}
+
+	.calculatorcontainer p {
+		display: block;
+	}
+}

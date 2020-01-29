@@ -1,0 +1,175 @@
+
+[
+	{
+		"id": 0, 
+		"name": "Kurs Rupii Indonezyjskiej", 
+		"slug": "/kursy-walut/kurs-idr.html"
+		},
+	{
+		"id": 1, 
+		"name": "Kurs Forinta Węgierskiego", 
+		"slug": "/kursy-walut/kurs-huf.html"
+		},
+	{
+		"id": 2, 
+		"name": "Kurs Kuny Chorwackiej", 
+		"slug": "/kursy-walut/kurs-hrk.html"
+		},
+	{
+		"id": 3, 
+		"name": "Kurs Dolar Hongkongu", 
+		"slug": "/kursy-walut/kurs-hkd.html"
+		},
+	{
+		"id": 4, 
+		"name": "Kurs Korony Duńskiej", 
+		"slug": "/kursy-walut/kurs-dkk.html"
+		},
+	{
+		"id": 5, 
+		"name": "Kurs Korony Czeskiej", 
+		"slug": "/kursy-walut/kurs-czk.html"
+		},
+	{
+		"id": 6, 
+		"name": "Kurs Yuana Jena Chińskiego", 
+		"slug": "/kursy-walut/kurs-cny.html"
+		},
+	{
+		"id": 7, 
+		"name": "Kurs Peso Chilijskiego", 
+		"slug": "/kursy-walut/kurs-clp.html"
+		},
+	{
+		"id": 8, 
+		"name": "Kurs Dolara Kanadyjskiego", 
+		"slug": "/kursy-walut/kurs-cad.html"
+		},
+	{
+		"id": 9, 
+		"name": "Kurs Reala Brazylijskiego", 
+		"slug": "/kursy-walut/kurs-brl.html"
+		},
+	{
+		"id": 10, 
+		"name": "Kurs Lewa Bułgarskiego", 
+		"slug": "/kursy-walut/kurs-bgn.html"
+		},
+	{
+		"id": 11, 
+		"name": "Kurs Dolara Australijsiego", 
+		"slug": "/kursy-walut/kurs-aud.html"
+		},
+	{
+		"id": 12, 
+		"name": "Kurs Randa RPA", 
+		"slug": "/kursy-walut/kurs-zar.html"
+		},
+	{
+		"id": 13, 
+		"name": "Kurs Hrywny Ukraińskiej", 
+		"slug": "/kursy-walut/kurs-uah.html"
+		},
+	{
+		"id": 14, 
+		"name": "Kurs Liry Tureckiej", 
+		"slug": "/kursy-walut/kurs-try.html"
+		},
+	{
+		"id": 15, 
+		"name": "Kurs Bata Tajlandzkiego", 
+		"slug": "/kursy-walut/kurs-thb.html"
+		},
+	{
+		"id": 16, 
+		"name": "Kurs Dolara Singapurskiego", 
+		"slug": "/kursy-walut/kurs-sgd.html"
+		},
+	{
+		"id": 17, 
+		"name": "Kurs Euro", 
+		"slug": "/kursy-walut/kurs-eur.html"
+		},
+	{
+		"id": 18, 
+		"name": "Kurs Dolara Amerykańskiego", 
+		"slug": "/kursy-walut/kurs-usd.html"
+		},
+	{
+		"id": 19, 
+		"name": "Kurs Franka Szwajcarskiego", 
+		"slug": "/kursy-walut/kurs-chf.html"
+		},
+	{
+		"id": 20, 
+		"name": "Kurs Funta Szterlinga", 
+		"slug": "/kursy-walut/kurs-gbp.html"
+		},
+	{
+		"id": 21, 
+		"name": "Kurs Rubla", 
+		"slug": "/kursy-walut/kurs-rub.html"
+		},
+	{
+		"id": 22, 
+		"name": "Kurs Korony Szwedzkiej", 
+		"slug": "/kursy-walut/kurs-sek.html"
+		},
+	{
+		"id": 23, 
+		"name": "Kurs Peso Filipińskie", 
+		"slug": "/kursy-walut/kurs-php.html"
+		},
+	{
+		"id": 24, 
+		"name": "Kurs Leja Rumuńskiego", 
+		"slug": "/kursy-walut/kurs-ron.html"
+		},
+	{
+		"id": 25, 
+		"name": "Kurs Dolara Nowozelandzkiego", 
+		"slug": "/kursy-walut/kurs-nzd.html"
+		},
+	{
+		"id": 26, 
+		"name": "Kurs Korony Norweskiej", 
+		"slug": "/kursy-walut/kurs-nok.html"
+		},
+	{
+		"id": 27, 
+		"name": "Kurs Riggita Malezyjskiego", 
+		"slug": "/kursy-walut/kurs-myr.html"
+		},
+	{
+		"id": 28, 
+		"name": "Kurs Peso Meksykańskiego", 
+		"slug": "/kursy-walut/kurs-mxn.html"
+		},
+	{
+		"id": 29, 
+		"name": "Kurs Wona Południowokoreańskiego", 
+		"slug": "/kursy-walut/kurs-krw.html"
+		},
+	{
+		"id": 30, 
+		"name": "Kurs Jena Japońskiego", 
+		"slug": "/kursy-walut/kurs-jpy.html"
+		},
+	{
+		"id": 31, 
+		"name": "Kurs Korony Islandzkiej", 
+		"slug": "/kursy-walut/kurs-isk.html"
+		},
+	{
+		"id": 32, 
+		"name": "Kurs Rupii Indyjskiej", 
+		"slug": "/kursy-walut/kurs-inr.html"
+		},
+	{
+		"id": 33, 
+		"name": "Kurs Szekla Izrealskiego", 
+		"slug": "/kursy-walut/kurs-ils.html"
+	}
+
+]
+

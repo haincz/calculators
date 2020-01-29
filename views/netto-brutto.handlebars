@@ -1,0 +1,49 @@
+{{> headbrutto-netto}}
+
+<header>
+	{{> mainnav}}
+
+
+</header>
+
+<h1>{{h1}}</h1>
+
+<section class="calculator">
+		<div class="calculatorbrutto row">
+			<div class="col-lg-4 col-sm-12 col-xs-12">
+				<input type="text" name="kalkulatorwynagrodzen" class="form-control" id="kalkulatorwynagrodzen" required="required" placeholder="wpisz wynagrodzenie brutto" autocomplete="off">
+			</div>
+			<div class="col-lg-4 col-sm-12 col-xs-12">
+				<button id="oblicz" class="btn btn-success">Oblicz wynagrodzenie netto</button>
+			</div>
+			<div class="col-lg-4 col-sm-12 col-xs-12">
+				<button id="resetdata" class="btn btn-danger">Wyczyść dane</button>
+			</div>
+		</div>
+	</section>
+	<section class="calculator-score row">
+		<div id="netto-score" class="alert alert-dark" style="width: 100%; margin-bottom: 20px;">
+			
+		</div>
+		<div id="netto-score"><p> {{PensjaNetto}}</p><p> {{UbezpiecznieSpołeczne}}</p><p>{{SkładkaZdrowotna}}</p><p> {{ZaliczkaNaPodatek}}</p></div>
+		<div class="addgooglerectangle">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- calcoolator - baner rectangle -->
+			<ins class="adsbygoogle"
+		     style="display:inline-block;width:336px;height:280px"
+		     data-ad-client="ca-pub-5540690619513101"
+		     data-ad-slot="9993419376"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+</section>
+<section class="content">
+
+{{{content}}}
+
+</section>
+
+{{> asideWynagrodzenia }}
+
+{{> footerWynagrodzenia }}

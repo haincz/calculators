@@ -1,0 +1,67 @@
+{{> head-netto-brutto-amp}}
+
+<body>
+  <header>
+    <div class="logo">
+			<a href="/"><amp-img src="/gfx/logo1.jpg" alt="logo" 
+          width="254"
+          height="35"
+          layout="responsive"
+      ></amp-img> </a>
+		</div>
+		
+		<nav class="nav">
+				<a class="nav-link" href="/">Strona główna</a>
+				<a class="nav-link" href="/kalkulator-wynagrodzen/">Kalkulator wynagrodzeń</a>
+				<a class="nav-link" href="/kalkulator-walut/">Kalkulator walut</a>
+				<a class="nav-link" href="/kursy-walut/">Kursy walut</a>
+				<a class="nav-link" href="/articles/">Artykuły</a>
+				<a class="nav-link" href="/kontakt/">Kontkat</a>
+		</nav>
+
+
+ 
+  </header>
+
+   <h1>{{h1}}</h1>
+
+  <section class="calculator-score row">
+    <div id="netto-score">
+      
+    </div>
+   <div id="netto-score"><p> {{PensjaNetto}}</p><p>{{UbezpiecznieSpołeczne}}</p><p>{{SkładkaZdrowotna}}</p><p>{{ZaliczkaNaPodatek}}</p></div>
+    <amp-ad
+      layout="fixed-height"
+      height=100
+      type="adsense"
+      data-ad-client="ca-pub-5540690619513101"
+      data-ad-slot="2694655803">
+    </amp-ad>
+  </section>
+
+<section class="content">
+
+  {{{content}}}
+
+</section>
+
+  {{> asideWynagrodzenia }}
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-40973431-7"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+  <p>Data utowrzenia:2020-01-13</p>
+  </body>
+</html>

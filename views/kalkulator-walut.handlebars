@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Kalkulator Walut online. Dane kursowe z NBP</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="/css/style-kalkulator-walut.css">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	   ga('create', 'UA-40973431-7', 'auto');
+	   ga('send', 'pageview');
+
+	 </script>
+</head>
+<body>
+	<header>
+		{{> mainnav}}
+
+	</header>
+		<h1>Kalkulator Walut</h1>
+	<div class="calculatorcontainer row">
+		<div class="currency col-lg-4 col-sm-12 col-xs-12">
+			<p>Podaj kwotę</p>
+				<input type="text" name="kwotadoprzeliczenia" class="form-control" id="kwotadoprzeliczenia" required="required" placeholder="podaj kwotę" autocomplete="off">
+			</div>
+		<div class="currency col-lg-4 col-sm-12 col-xs-12">
+			<p>Przelicz z:</p>
+			<select id="convert-from" class="form-control">
+			 	<option value="pln">PLN - złoty</option>
+			 	<option value="EUR">EUR - Euro</option>
+			 	<option value="USD">USD - Dolar Amerykański</option>
+			 	<option value="GBP">GBP - Funt Szterling</option>
+			 	<option value="CHF">CHF - Frank szwajcarski</option>
+			 	<option value="HRK">HRK - Kuna (Chorwacja)</option>
+			 	<option value="THB">THB - Bat (Tajlandia)</option>
+			 	<option value="AUD">AUD - Dola Australijski</option>
+			 	<option value="HKD">HKD - Dolar Hongkongu</option>
+			 	<option value="CAD">CAD - Dolar Kanadyjski</option>
+			 	<option value="NZD">NZD - Dolar Nowozelandzki</option>
+			 	<option value="SGD">SGD - Dolar Singapurski</option>
+			 	<option value="HUF">HUF - Forint (Węgry)</option>
+			 	<option value="UAH">UAH - Hrywna(Ukraina)</option>
+			 	<option value="JPY">JPY - Jen (Japonia)</option>
+			 	<option value="CZK">CZK - Korona Czeska</option>
+			 	<option value="DKK">DKK - Korona Duńska</option>
+			 	<option value="ISK">ISK - Korona Islandzka</option>
+			 	<option value="NOK">NOK - Korona Norweska</option>
+			 	<option value="SEK">SEK - Korona Szwedzka</option>
+			 	<option value="RON">RON - Lej Rumuński</option>
+			 	<option value="BGN">BGN - Lew (Bułgaria)</option>
+			 	<option value="TRY">TRY - Lira Turecka</option>
+			 	<option value="ILS">ILS - Nowy Izraelski Szekel</option>
+			 	<option value="CLP">CLP - Peso Chilijskie</option>
+			 	<option value="PHP">PHP - Peso Filipińskie</option>
+			 	<option value="MXN">MXN - Peso Meksykańskie</option>
+			 	<option value="ZAR">ZAR - Rand (RPA)</option>
+			 	<option value="BRL">BRL - Real (Brazylia)</option>
+			 	<option value="MYR">MYR - Ringgit (Malezja)</option>
+			 	<option value="RUB">RUB - Rubel Rosyjski</option>
+			 	<option value="IDR">IDR - Rupia Indonezyjska</option>
+			 	<option value="INR">INR - Rupia Indyjska</option>
+			 	<option value="KRW">KRW - Won Południowokoreański</option>
+			 	<option value="CNY">CNY - Yuan renminbi (Chiny)</option>
+			 </select>
+		</div>
+		<div class="currency col-lg-4 col-sm-12 col-xs-12">
+		<p>Przelicz na:</p>
+			<select id="convert-to" class="form-control"> 
+			 	<option value="EUR">EUR - Euro</option>
+			 	<option value="USD">USD - Dolar Amerykański</option>
+			 	<option value="GBP">GBP - Funt Szterling</option>
+			 	<option value="CHF">CHF - Frank szwajcarski</option>
+			 	<option value="HRK">HRK - Kuna (Chorwacja)</option>
+			 	<option value="THB">THB - Bat (Tajlandia)</option>
+			 	<option value="AUD">AUD - Dola Australijski</option>
+			 	<option value="HKD">HKD - Dolar Hongkongu</option>
+			 	<option value="CAD">CAD - Dolar Kanadyjski</option>
+			 	<option value="NZD">NZD - Dolar Nowozelandzki</option>
+			 	<option value="SGD">SGD - Dolar Singapurski</option>
+			 	<option value="HUF">HUF - Forint (Węgry)</option>
+			 	<option value="UAH">UAH - Hrywna(Ukraina)</option>
+			 	<option value="JPY">JPY - Jen (Japonia)</option>
+			 	<option value="CZK">CZK - Korona Czeska</option>
+			 	<option value="DKK">DKK - Korona Duńska</option>
+			 	<option value="ISK">ISK - Korona Islandzka</option>
+			 	<option value="NOK">NOK - Korona Norweska</option>
+			 	<option value="SEK">SEK - Korona Szwedzka</option>
+			 	<option value="RON">RON - Lej Rumuński</option>
+			 	<option value="BGN">BGN - Lew (Bułgaria)</option>
+			 	<option value="TRY">TRY - Lira Turecka</option>
+			 	<option value="ILS">ILS - Nowy Izraelski Szekel</option>
+			 	<option value="CLP">CLP - Peso Chilijskie</option>
+			 	<option value="PHP">PHP - Peso Filipińskie</option>
+			 	<option value="MXN">MXN - Peso Meksykańskie</option>
+			 	<option value="ZAR">ZAR - Rand (RPA)</option>
+			 	<option value="BRL">BRL - Real (Brazylia)</option>
+			 	<option value="MYR">MYR - Ringgit (Malezja)</option>
+			 	<option value="RUB">RUB - Rubel Rosyjski</option>
+			 	<option value="IDR">IDR - Rupia Indonezyjska</option>
+			 	<option value="INR">INR - Rupia Indyjska</option>
+			 	<option value="KRW">KRW - Won Południowokoreański</option>
+			 	<option value="CNY">CNY - Yuan renminbi (Chiny)</option>
+			 	<option value="pln">PLN - złoty</option>
+			</select>
+		</div>
+		<div class="currency col-lg-6 col-sm-12 col-xs-12">
+			<button id="calcvalue" class="btn btn-success">Przelicz</button>
+		</div>
+		<div class="currency col-lg-6 col-sm-12 col-xs-12">
+			<button id="calcvalue-claer" class="btn btn-danger">Wyczyść dane</button>
+		</div>
+	</div>
+	<div id="calcvalate-result" class="alert alert-info">
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/walutymin.js"></script>
+	
+	<app-root></app-root>
+<script type="text/javascript" src="/rodo/inline.bundle.js"></script>
+<script type="text/javascript" src="/rodo/polyfills.bundle.js"></script>
+<script type="text/javascript" src="/rodo/styles.bundle.js"></script>
+<script type="text/javascript" src="/rodo/vendor.bundle.js"></script>
+<script type="text/javascript" src="/rodo/main.bundle.js"></script>
+	
+</body>
+</html>

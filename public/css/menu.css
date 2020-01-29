@@ -1,0 +1,28 @@
+header {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+nav a {
+    text-transform: uppercase;
+}

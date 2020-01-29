@@ -1,0 +1,167 @@
+
+main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+#curve_chart {
+	width: 1200px; 
+	height: 500px;
+	max-width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container div {
+	margin: 10px 0;
+}
+
+
+.container div a {
+	font-size: 20px;
+}
+
+footer {
+
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+footer div {
+	margin: 5px;
+}
+
+/*cookies*/
+
+#cookies-modal {
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    left: 0;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modalContent {
+	width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.modalContent > p {
+	text-align: center;
+	font-size: 16px;
+}
+
+
+.salary-calculator li {
+	list-style-type: none;
+	border-top: 1px solid #424242;
+}
+
+.salary-calculator a:before {
+	content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+.salary-calculator a:hover:before{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.salary-calculator a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.salary-calculator a:hover {
+	text-decoration: none;
+    background-color: #e4e2dc;
+    color: white;
+}
+
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/*cookies end*/
+
+@media screen and (min-width: 1200px) {
+
+.col-lg-1 {
+	width: 15%;
+}
+
+}

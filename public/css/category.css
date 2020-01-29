@@ -1,0 +1,55 @@
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.image {
+    height: 369px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: left;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #212529;
+    text-decoration: none;
+}
+
+.article a:hover { 
+    text-decoration: none;
+}
+
+
+.kalkulator-nav a {
+    color:  #212529;
+}
+
+@media (max-width: 600px) {
+    .image {
+        height: 230px;        
+    }
+}
+
+@media (max-width: 400px) {
+
+    .image {
+        height: 180px;        
+    }
+
+}
+

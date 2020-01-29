@@ -1,0 +1,64 @@
+{{> head-kursy-single}}
+
+<header>
+	{{> mainnav}}
+
+</header>
+	<div id="showAskBid">
+
+	</div>
+	<h1>{{name}} wykres</h1>
+	<h2 id="todayCours">Średni kurs waluty z ostatniego dnia notowania: </h2>
+	
+	<div id="curve_chart"></div>
+	 <div class="content">
+	 	{{content}}
+	 </div>
+
+
+	<footer>
+			<div class="list-group" style="text-align: center">
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-eur.html">Kurs Euro</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-usd.html">Kurs Dolara Amerykańskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-chf.html">Kurs Franka Szwajcarskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-gbp.html">Kurs Funta Szterlinga</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-nzd.html">Kurs Dolara Nowozelandzkiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-rub.html">Kurs Rubla</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-sek.html">Kurs Korony Szwedzkiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-php.html">Kurs Peso Filipińskie</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-ron.html">Kurs Leja Rumuńskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-nok.html">Kurs Korony Norweskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-myr.html">Kurs Riggita Malezyjskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-mxn.html">Kurs Peso Meksykańskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-krw.html">Kurs Wona Południowokoreańskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-jpy.html">Kurs Jena Japońskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-isk.html">Kurs Korony Islandzkiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-inr.html">Kurs Rupii Indyjskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-ils.html">Kurs Szekla Izrealskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-idr.html">Kurs Rupii Indonezyjskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-huf.html">Kurs Forinta Węgierskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-hrk.html">Kurs Kuny Chorwackiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-hkd.html">Kurs Dolar Hongkongu</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-dkk.html">Kurs Korony Duńskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-czk.html">Kurs Korony Czeskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-cny.html">Kurs Yuana Jena Chińskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-clp.html">Kurs Peso Chilijskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-cad.html">Kurs Dolara Kanadyjskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-brl.html">Kurs Reala Brazylijskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-bgn.html">Kurs Lewa Bułgarskiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-aud.html">Kurs Dolara Australijsiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-zar.html">Kurs Randa RPA</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-uah.html">Kurs Hrywny Ukraińskiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-try.html">Kurs Liry Tureckiej</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-thb.html">Kurs Bata Tajlandzkiego</a>
+				<a class="list-group-item" href="http://calculators.pl/kursy-walut/kurs-sgd.html">Kurs Dolara Singapurskiego</a>
+			</div>
+		</footer>      
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/coursescurve.js"></script>
+<app-root></app-root>
+<script type="text/javascript" src="/rodo/inline.bundle.js"></script>
+<script type="text/javascript" src="/rodo/polyfills.bundle.js"></script>
+<script type="text/javascript" src="/rodo/styles.bundle.js"></script>
+<script type="text/javascript" src="/rodo/vendor.bundle.js"></script>
+<script type="text/javascript" src="/rodo/main.bundle.js"></script>

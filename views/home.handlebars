@@ -1,0 +1,73 @@
+{{> headmain }}
+
+	<header>
+		{{> mainnav }}
+		<div class="headeing">
+		</div>
+	</header>
+				<h1>Kalkulatory i kursy walut Online</h1>
+	<main>
+		<div class="tools row">
+			<div class="salary-calculator tool col-xl-4 col-lg-4 col-sm-12">
+				<a href="/kalkulator-wynagrodzen/"><img src="/gfx/kalkulator-wynagrodzen.jpg" />
+					<div class="toolDesc">kalkulator wynagrodzeń </div>
+				</a>
+			</div>
+			<div class="currency-calcultor tool col-xl-4 col-lg-4 col-sm-12">
+				<a href="/kalkulator-walut/"><img src="/gfx/kalkulaotr-walut.jpg" />
+					<div class="toolDesc">kalkulator walut</div>
+				</a>
+			</div>
+			<div class="currency-curses tool col-xl-4 col-lg-4 col-sm-12">
+				<a href="/kursy-walut/"><img src="gfx/kurs-walut.jpg" />
+					<div class="toolDesc">kursy walut</div>
+				</a>
+			</div>
+		</div>
+		<h2>{{categoryTitle}}</h2>
+		<div class="wrapper">
+			<div class="row container">
+				<div class="col-lg-8 col-xs-12 col-sm-12">
+					
+					{{#if article_list}}
+					
+						{{#each article_list}}
+							<div class="col-lg-12 col-xs-12 col-sm-12">
+								<div class="article">
+									<a href="/articles/{{url}}">
+										<div class="image">
+											<img src={{image}}  alt="{{title}}"/>
+										</div>
+										<h2>{{title}}</h2>
+									</a>
+									<p>{{lead}}</p>
+								</div>                        
+							</div>
+						{{/each}}
+					
+					{{/if}}
+
+				</div>
+				<aside class="col-sm-12 col-xs-12 col-lg-4">
+					<div class="addgooglerectangle">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- calcoolator - baner rectangle -->
+							<ins class="adsbygoogle"
+							style="display:inline-block;width:336px;height:280px"
+							data-ad-client="ca-pub-5540690619513101"
+							data-ad-slot="9993419376"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+					</div>
+						{{> asideWynagrodzenia }}
+				</aside>
+			</div>
+    	</div>
+	</main>
+	<app-root></app-root>
+<script type="text/javascript" src="/rodo/inline.bundle.js"></script>
+<script type="text/javascript" src="/rodo/polyfills.bundle.js"></script>
+<script type="text/javascript" src="/rodo/styles.bundle.js"></script>
+<script type="text/javascript" src="/rodo/vendor.bundle.js"></script>
+<script type="text/javascript" src="/rodo/main.bundle.js"></script>

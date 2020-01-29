@@ -1,0 +1,188 @@
+
+* {
+	-webkit-box-sizing: border-box; /* iOS <= 4 i Android <= 2.3 */
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box; /* Chrome, Opera, Safari 5+ i IE 8+ */
+}
+
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+[class*="col-"] {
+	float: left;
+	width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.image {
+    height: 369px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: left;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #212529;
+    text-decoration: none;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.article a:hover { 
+    text-decoration: none;
+}
+
+
+.kalkulator-nav a {
+    color:  #212529;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+
+.tool {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 15px 0;
+}
+
+.toolDesc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.tool a img {
+    transition: transform 0.5s;
+}
+
+.tool > a:hover img {
+    transform: scale(1.1);
+}
+
+.tool > a:hover  .toolDesc {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .image {
+        height: 230px;        
+    }
+}
+
+@media (max-width: 400px) {
+
+    .image {
+        height: 180px;        
+    }
+
+}
+
+
+/*cookies*/
+
+#cookies-modal {
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    left: 0;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modalContent {
+	width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.modalContent > p {
+	text-align: center;
+	font-size: 16px;
+}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/*cookies end*/
+
+.content {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+
+.col-lg-6 {
+    width: 50%;
+}
+}

@@ -1,0 +1,53 @@
+{{> categoryhead}}
+
+	<header>
+		{{> mainnav}}
+	</header>
+    <h1>{{categoryTitle}}</h1>
+    <div class="wrapper">
+        <div class="row container">
+            <div class="col-lg-8 col-xs-12 col-sm-12">
+                
+                {{#if article_list}}
+                
+                    {{#each article_list}}
+                        <div class="col-lg-12 col-xs-12 col-sm-12">
+                            <div class="article">
+                                <a href="{{url}}">
+                                    <div class="image">
+                                        <img src={{image}}  alt="{{title}}"/>
+                                    </div>
+                                    <h2>{{title}}</h2>
+                                </a>
+                                <p>{{lead}}</p>
+                            </div>                        
+                        </div>
+                        <hr>
+                    {{/each}}
+                
+                {{/if}}
+
+            </div>
+            <aside class="col-sm-12 col-xs-12 col-lg-4">
+                 <div class="addgooglerectangle">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- calcoolator - baner rectangle -->
+                        <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-5540690619513101"
+                        data-ad-slot="9993419376"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                </div>
+                    {{> asideWynagrodzenia }}
+            </aside>
+        </div>
+    </div>
+        
+<app-root></app-root>
+<script type="text/javascript" src="/rodo/inline.bundle.js"></script>
+<script type="text/javascript" src="/rodo/polyfills.bundle.js"></script>
+<script type="text/javascript" src="/rodo/styles.bundle.js"></script>
+<script type="text/javascript" src="/rodo/vendor.bundle.js"></script>
+<script type="text/javascript" src="/rodo/main.bundle.js"></script>
